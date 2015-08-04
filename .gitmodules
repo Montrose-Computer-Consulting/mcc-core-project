@@ -1,0 +1,3 @@
+[submodule "themes/mcc-core-theme"]
+	path = themes/mcc-core-theme
+	url = git@github.com:Montrose-Computer-Consulting/mcc-core-theme.git

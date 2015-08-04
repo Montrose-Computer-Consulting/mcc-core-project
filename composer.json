@@ -1,19 +1,13 @@
 {
-    "name": "october/october",
-    "description": "October CMS",
+    "name": "mcc/mcc-core-project",
+    "description": "October CMS core + our build",
     "homepage": "http://octobercms.com",
     "keywords": ["october", "cms", "octobercms", "laravel"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
+            "name": "Geoff Oslund",
+            "email": "geoffreyoslund@gmail.com"
         }
     ],
     "support": {
@@ -23,6 +17,15 @@
         "irc": "irc://irc.freenode.net/october",
         "source": "https://github.com/octobercms/october"
     },
+    "repositories" : [{
+            "type": "git",
+            "url": "git@github.com:Montrose-Computer-Consulting/mcc-core-theme.git"
+    }],
+    "extra": {
+        "installer-paths": {
+            "themes/{$name}": ["type: october-theme"]
+        }
+    },
     "require": {
         "php": ">=5.4",
         "october/rain": "~1.0",
@@ -30,7 +33,8 @@
         "october/backend": "~1.0",
         "october/cms": "~1.0",
         "laravel/framework": "5.0.*",
-        "illuminate/html": "5.0.*"
+        "illuminate/html": "5.0.*",
+        "mcc/mcc-core-theme":"dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
